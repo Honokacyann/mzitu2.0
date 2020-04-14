@@ -109,6 +109,7 @@ if __name__ == "__main__":
                     num=num+1
                     while True:
                         pic = href+'/'+str(num)
+
                         try:
                             html = requests.get(pic, headers=header,proxies = proxies_one)
                         except requests.exceptions.ConnectionError as e:
